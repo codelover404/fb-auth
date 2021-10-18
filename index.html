@@ -29,7 +29,7 @@
 	<script>
 		
 		function check(){
-			var provider = new firebase.auth.FacebookAuthProvider();
+			var provider = new firebase.auth.FacebookAuthProvider()
 			firebase.auth()signInWithPopup(provider);
 			.then((res)=>{
 				console.log(res);
