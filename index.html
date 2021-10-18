@@ -27,6 +27,57 @@
 
 
 	<script>
+		// console.log(firebase)
+
+		function check(){
+			var provider = new firebase.auth.FacebookAuthProvider();
+			firebase.auth().signInWithPopup(provider)
+			.then((res)=>{
+				console.log(res);
+			})
+			.catch((error)=>{
+				console.log(error)
+			})
+		}
+		
+
+// var  PROVIDE = ["hunain","hammad"]
+
+// 		forEach(i in PROVIDE){
+// 			console.log(i);
+// 		}
+
+	</script>
+</body>
+</html><!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+
+	<button onclick="check()">LOGIN</button>
+
+	<script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-app-compat.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-auth-compat.js"></script>
+	<script type="text/javascript">
+		 const firebaseConfig = {
+    apiKey: "AIzaSyB5og0xsDdbeyO73ji_6tg6YYqQForAl3k",
+    authDomain: "facebook-auth-9851f.firebaseapp.com",
+    projectId: "facebook-auth-9851f",
+    storageBucket: "facebook-auth-9851f.appspot.com",
+    messagingSenderId: "486399657457",
+    appId: "1:486399657457:web:d6648acd6efa450c337050"
+  };
+
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+	</script>
+
+
+
+	<script>
 		console.log(firebase)
 
 		function check(){
